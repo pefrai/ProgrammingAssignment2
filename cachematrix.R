@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
         # The cached value is not valid. We need to compute the inverse
         # We assume that x is invertible
         minv <- solve(x$get(), ...)
-        # Cached the result for future use
+        # Cache the result for future use
         x$setinverse(minv)
     } else {
         message("cached data")
